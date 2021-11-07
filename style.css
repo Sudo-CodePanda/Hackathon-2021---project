@@ -1,0 +1,311 @@
+/*Imported font families*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+section#hero{
+    background-color: #0A043C;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6vh;
+}
+
+header{
+    background-color: #0A043C;
+}
+
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #edf6f9;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.nav-links li{
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+.nav-links li a{
+    color: #edf6f9;
+}
+
+.nav-links li a:hover{
+    color: #FCDAB7;
+    text-decoration: underline;
+}
+
+/*Styling for the hero section*/
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#hero .container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.right, div.left{
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+div.right{
+    text-align: center;
+}
+
+div.left{
+    text-align: right;
+}
+
+img.hero-dp{
+    height: 70vh;
+    width: 60%;
+    /* max-width: 450px; */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 8px;
+}
+
+h1.title .elon, .musk{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.elon{
+    font-weight: 700;
+    font-size: 2em;  
+    color: #719FB0;  
+}
+
+.musk{
+    font-weight: 800;
+    font-size: 4em;
+    /* color: #EEEEEE; */
+    color: #006d77;
+}
+
+p.quote{
+    padding-left: 10%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    /* color: #A0C1B8; */
+    color: #83c5be;
+}
+
+span.bold-aps{
+    font-weight: 900;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a.about-my-work-button button, a.about-me-button button{
+    padding: 8px 50px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #FCDAB7;
+    background-color: #1E5F74;
+    border: 2px solid #1D2D50;
+    border-radius: 0%;
+}
+
+a.about-my-work-button :hover, a.about-me-button button:hover{
+    color: #EEEEEE;
+    background-color: #000000;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 768px){
+    #hero.container{
+        flex-direction: column-reverse;
+    }
+
+    img.hero-dp{
+        display: none;
+    }
+
+    #about.container{
+        flex-direction: column;
+    }
+
+}
+
+/*Styling for the about my work section*/
+section#about{
+    padding-top: 10rem;
+    padding-bottom: 5%;
+    background-color: #E1F2FB;
+}
+
+img.company-logo{
+    height: 30%;
+    width: 30%;
+    border-radius: 10px;
+    padding-bottom: 5%;
+}
+
+.company-icon{
+    text-align: center;
+}
+
+#about .about-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-card{
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.about-card:nth-child(1):hover{
+    background-color: #94b3ee;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    transition: 0.5s ease;
+}
+
+.about-card:nth-child(2):hover{
+    background-color: #fac3b2;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    transition: 0.5s ease;
+}
+
+.about-card:nth-child(3):hover{
+    background-color: #c3b4c9;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    transition: 0.5s ease;
+}
+
+.area-title{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+h1.about-title, h1.about-me-title{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3.company-name{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+p.description{
+    font-size: 13px;
+}
+
+div.about-me{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    text-align: right;
+}
+/*End of styling for about my work section*/
+
+/*Styling for about-me-section*/
+section#about-me{
+    /* background-image: url(https://raw.githubusercontent.com/Sudo-CodePanda/Hackathon-shared/main/Elon%20Musk%20Final%20Image%20III.jpg); */
+    background-color: #000000;
+}
+
+h1.about-me-title{
+    color: #ff8000;
+}
+
+p.personal-desc{
+    color: #ffffff;
+}
+
+div.description-area{
+    text-align: left;
+}
+
+.inventions-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3.invention-name{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.invent-card{
+    text-align: center;
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 5%;
+    background-color: #1D2D50; 
+}
+
+i.facebook {
+    color: #4267B2;
+}
+
+i.twitter {
+    color: #1DA1F2;
+}
+
+i.youtube {
+    color: #FF0000;
+}
+
+i.instagram{
+    color: #bc2a8d;
+}
+
+i.footer-icon {
+    float: right;
+}
+
+i.footer-icon {
+    font-size: 26px;
+    padding-right: 2%;
+}
+
+.footer i:hover {
+    font-size: 30px;
+    transition: 0.2s ease;
+}
